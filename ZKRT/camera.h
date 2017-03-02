@@ -26,6 +26,7 @@
 #define PWM_DONGZUO_MODE(value)   TIM_SetCompare3(TIM2, value);  //ÅÄÕÕºÍÂ¼ÏñÄ£Ê½ÇÐ»»
 #define PWM_DONGZUO(value)        TIM_SetCompare2(TIM2, value);
 
+#define GET_JIAOJU                TIM_GetCapture4(TIM3)
 #define GET_DONGZUO               TIM_GetCapture2(TIM2)
 #define GET_DONGZUO_MODE          TIM_GetCapture3(TIM2)
 

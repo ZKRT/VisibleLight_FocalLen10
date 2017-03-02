@@ -67,11 +67,11 @@ void action_hangxiang(void)
 	{
 		if (pwm_hangxiang > 1500)  //实际测试发现，给1000的时候向右，给2000向左，所以我们要取它的反向值
 		{
-			PWM_HANGXAING(1300);
+			PWM_HANGXAING(1700);
 		}
 		else if (pwm_hangxiang < 1500)
 		{
-			PWM_HANGXAING(1700);
+			PWM_HANGXAING(1300);
 		}
 		else
 		{
@@ -230,6 +230,38 @@ void action_jiaoju(void)
 	{
 		PWM_JIAOJU(1500);						
 	}
+	
+//	int jiaoju_value = 1500;
+//	jiaoju_value = GET_JIAOJU;
+//	
+//	if ((last_jiaoju_re != pwm_jiaoju_re)&&(last_jiaoju_in == pwm_jiaoju_in))
+//	{
+//		if((jiaoju_value-200) <=1000)
+//		{
+//			jiaoju_value = 1000;
+//		}
+//		else
+//		{	
+//			jiaoju_value = jiaoju_value-200;	
+//		}
+//		PWM_JIAOJU(jiaoju_value);
+//	}
+//	else if ((last_jiaoju_re == pwm_jiaoju_re)&&(last_jiaoju_in != pwm_jiaoju_in))
+//	{
+//		if((jiaoju_value+200) >=2000)
+//		{
+//			jiaoju_value = 2000;
+//		}
+//		else
+//		{	
+//			jiaoju_value = jiaoju_value+200;	
+//		}
+//		PWM_JIAOJU(jiaoju_value); 
+//	}
+//	else
+//	{
+//		PWM_JIAOJU(1500);						
+//	}
 }
 
 //有两种模式：低速锁头模式、高速跟随模式，要跟随模式。说明书推荐1500

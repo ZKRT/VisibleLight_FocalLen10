@@ -200,47 +200,32 @@
         <Ww>
           <count>10</count>
           <WinNumber>1</WinNumber>
-          <ItemText>last_three_paizhao</ItemText>
+          <ItemText>adc_12vol,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>11</count>
           <WinNumber>1</WinNumber>
-          <ItemText>pwm_three_paizhao</ItemText>
+          <ItemText>adc_12vol,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>12</count>
           <WinNumber>1</WinNumber>
-          <ItemText>three_paizhao_flag</ItemText>
+          <ItemText>adc_5vol,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>13</count>
           <WinNumber>1</WinNumber>
-          <ItemText>adc_25vol,0x0A</ItemText>
+          <ItemText>adc_5is,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>14</count>
           <WinNumber>1</WinNumber>
-          <ItemText>adc_12vol,0x0A</ItemText>
+          <ItemText>adc_12is,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>15</count>
           <WinNumber>1</WinNumber>
-          <ItemText>adc_5vol,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>16</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>adc_5is,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>17</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>adc_12is,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>18</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>sub_camera_zkrt_packet_can1_rx</ItemText>
+          <ItemText>adc_25vol,0x0A</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
