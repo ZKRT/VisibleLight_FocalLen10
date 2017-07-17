@@ -60,7 +60,7 @@ uint8_t sub_camera_zkrt_recv_decode_and_zkrt_encode_ack(void)
 	return 0;//没有最新的解析成功的操作
 }
 
-
+#ifdef OLD_LOGIC
 void action_hangxiang(void)
 {
 	if (pwm_mode == 2)					 //慢速模式
@@ -106,7 +106,38 @@ void action_fuyang(void)
 		PWM_FUYANG(pwm_fuyang);
 	}
 }
-
+#else
+void action_hangxiang(void)
+{
+	if (pwm_hangxiang > 1500)  //实际测试发现，给1000的时候向右，给2000向左，所以我们要取它的反向值
+	{
+		PWM_HANGXAING(1300);
+	}
+	else if (pwm_hangxiang < 1500)
+	{
+		PWM_HANGXAING(1700);
+	}
+	else
+	{
+		PWM_HANGXAING(1500);
+	}
+}
+void action_fuyang(void)
+{
+	if (pwm_fuyang > 1500)
+	{
+		PWM_FUYANG(1300);
+	}
+	else if (pwm_fuyang < 1500)
+	{
+		PWM_FUYANG(1700);
+	}
+	else
+	{
+		PWM_FUYANG(1500);
+	}	
+}
+#endif
 void action_henggun(void)						//这里没有定义横滚！！！
 {
 	

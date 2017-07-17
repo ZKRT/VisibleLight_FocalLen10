@@ -3,6 +3,8 @@
 
 #include "sys.h"
 
+//#define OLD_LOGIC
+
 #define _PWM_2000	2000
 #define _PWM_1000	1000
 
